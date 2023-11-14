@@ -1,0 +1,153 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.navbar, .header {
+    background-color: #EAC926;
+}
+
+.logo {
+    width: 20%;
+}
+
+.home-banner img{
+    max-width: 100%;
+}
+
+.search-bar {
+    padding: 10px;
+}
+
+.search-bar input {
+    width: 15%;
+    background-color: #ebebeb;;
+    font-size: 16px;
+}
+
+.search-bar button, .fas.fa-search {
+    background-color: #ebebeb;
+}
+
+.promo {
+    text-align: center;
+}
+
+.producto {
+    margin-bottom: 10px;
+}
+
+.contenido {
+    border-top: 1px solid #ebebeb; /* Borde superior */
+    padding: 15px; /* Espacio alrededor del contenido */
+    background-color: white;
+}
+
+i.fa-solid.fa-hand-holding-dollar {
+    align-items: center;
+}
+
+.icon-container {
+    margin-left: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none; /* Sin subrayado en enlaces */
+    color: #000; /* Color de texto negro */
+    text-align: left;
+}
+
+.menu-button {
+    display: block; /* Por defecto, ocultar en pantallas más grandes */
+    text-align: center;
+}
+
+/* Estilos para el botón de hamburguesa */
+#toggle-menu {
+    background-color: #1259c3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ebebeb; /* Color del icono */
+    padding: 5px 10px;
+}
+
+.fas.fa-bars {
+    background-color: #1259c3;
+}
+
+h2 {
+    font-size: 24px;
+    color: #666;
+}
+
+h3 {
+    color: #666
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount, .fa-solid.fa-truck {
+    color: #39b54a;
+}
+
+.seccion {
+    text-align: center; /* Centrar horizontalmente el contenido */
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fa-solid.fa-credit-card, .fa-solid.fa-gift, .fa-solid.fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+@media (max-width: 360px) {
+    .producto .info .descripcion {
+        display: none; /* Ocultar la descripción en dispositivos móviles */
+    }
+    .search-bar, .navbar ul{
+        display: none;
+    }
+    .menu-button {
+        display: block; /* Ocultar la imagen del menú hamburguesa en tablets y desktop */
+    }
+}
+
+/* Estilos para tablets (ancho mínimo de 361 px) */
+@media (min-width: 361px) {
+    .menu-button {
+        display: none; /* Ocultar la imagen del menú hamburguesa en tablets y desktop */
+    }
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/* Estilos para desktop (ancho mínimo de 769 px) */
+@media (min-width: 769px) {
+    .menu-button {
+        display: none; /* Ocultar la imagen del menú hamburguesa en tablets y desktop */
+    }
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
